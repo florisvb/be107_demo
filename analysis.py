@@ -2,14 +2,10 @@ import multi_tracker_analysis as mta
 import matplotlib.pyplot as plt
 
 # define the directory, and find the h5 file
-# note: you might need to replace "~" with "/home/group3" or whatever your user name is
-data_directory = 'data'
-filenames = mta.read_hdf5_file_to_pandas.get_filenames('data', '.hdf5')
-filename = filenames[0]
+filename = 'data/XXXXXX.hdf5'
 
 # get the background image filename
-bgimg_filenames = mta.read_hdf5_file_to_pandas.get_filenames('data', '.png')
-bgimg_filename = bgimg_filenames[0]
+bgimg_filename = 'data/XXXXXXXX.png'
 
 # load the h5 file as a pandas dataframe
 pd = mta.read_hdf5_file_to_pandas.load_data_as_pandas_dataframe_from_hdf5_file(filename)
